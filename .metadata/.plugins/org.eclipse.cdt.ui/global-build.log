@@ -1,0 +1,16 @@
+12:06:42 **** Clean-only build of configuration Debug for project hexList ****
+make clean 
+rm -rf  ./hexList.o  ./hexList.d  hexList.exe
+ 
+12:06:43 **** Build of configuration Debug for project hexList ****
+make all 
+Building file: ../hexList.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"hexList.d" -MT"hexList.o" -o "hexList.o" "../hexList.cpp"
+Finished building: ../hexList.cpp
+ 
+Building target: hexList.exe
+Invoking: Cygwin C++ Linker
+g++  -o "hexList.exe"  ./hexList.o   
+Finished building target: hexList.exe
+ 
