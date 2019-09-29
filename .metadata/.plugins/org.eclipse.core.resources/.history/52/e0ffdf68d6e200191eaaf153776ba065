@@ -1,0 +1,15 @@
+/* Vec.cpp defines the methods for Vec, a simple vector class.
+ * Student Name: Zachary Clark and Christian Mutschler
+ * Date: 9-27-19
+ * Begun by: Joel C. Adams, for CS 112 at Calvin University.
+ */
+ 
+#include "Vec.h"
+#include <stdexcept>
+#include <cassert>
+#include <fstream>
+
+/* Default constructor
+ * Returns a default vector of size 0 and pointer nullptr.
+ */
+

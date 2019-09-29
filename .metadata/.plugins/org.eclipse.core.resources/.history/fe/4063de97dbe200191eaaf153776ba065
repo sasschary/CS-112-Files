@@ -1,0 +1,26 @@
+/* Matrix.cpp defines Matrix class methods.
+ * Student Name:
+ * Date:
+ * Begun by: Joel Adams, for CS 112 at Calvin University.
+ */
+
+#include "Matrix.h"
+
+Matrix::Matrix() {
+	myRows = myColumns = 0;
+}
+
+Matrix::Matrix(unsigned rows, unsigned columns) {
+	myRows = rows;
+	myColumns = columns;
+	myVec.setSize(rows);
+	for (unsigned i = 0; i < rows; i++) {
+		myVec[i].setSize(columns);
+	}
+}
+
+Vec<Item> Matrix::operator[](unsigned index) {
+	return myVec[i];
+}
+
+
