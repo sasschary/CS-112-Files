@@ -124,6 +124,26 @@ Matrix Matrix::operator-(const Matrix& mat2) const {
 	return diff;
 }
 
+/* Addition assignment operator
+ * @param: mat2, the matrix which will be added to this matrix
+ * Postcondition: Each element of mat2 has been added to the corresponding element of this matrix
+ *
+ * Written by Zachary Clark because we were lazy in the application portion
+ */
+void Matrix::operator+=(const Matrix& mat2) {
+	*this = *this + mat2;
+}
+
+/* Subtraction assignment operator
+ * @param: mat2, the matrix which will be subtracted from this matrix
+ * Postcondition: Each element of mat2 has been subtracted from the corresponding element of this matrix
+ *
+ * Written by Zachary Clark because we were lazy in the application portion
+ */
+void Matrix::operator-=(const Matrix& mat2) {
+	*this = *this - mat2;
+}
+
 Matrix Matrix::getTranspose() const {
 	Matrix transpose(myColumns, myRows);
 
